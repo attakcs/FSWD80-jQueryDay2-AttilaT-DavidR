@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+	<img src="img/Cmbell.png" alt="christmas bell">
+	<img src="img/santa-claus.png" alt="Santa Claus">
+	<img src="img/whitebox.png" alt="White Box">
+</div>
+<div>
+	<img src="img/Cmbell.png" alt="christmas bell">
+	<img src="img/santa-claus.png" alt="Santa Claus">
+	<img src="img/whitebox.png" alt="White Box">
+</div>
+<div>
+	<img src="img/Cmbell.png" alt="christmas bell">
+	<img src="img/santa-claus.png" alt="Santa Claus">
+	<img src="img/whitebox.png" alt="White Box">
+</div>
+
+	<script>
+		$("document").ready(function(){
+			$("img[alt='Santa Claus']").click(function(){
+				$(this).hide();
+			})
+
+		});
+	</script>
+
+</body>
+</html>
