@@ -41,5 +41,17 @@ var grocery = `[
 	"image" : "img/banana.jpeg",
 	"price" : "2.79",
 	"quantity" : "0"
+},{
+	"id" : "7",
+	"name" : "Ring",
+	"image" : "img/ring.jpg",
+	"price" : "599",
+	"quantity" : "0"
+},{
+	"id" : "8",
+	"name" : "Necklace",
+	"image" : "img/necklace.jpg",
+	"price" : "1199.90",
+	"quantity" : "0"
 }
 ]`
