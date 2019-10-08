@@ -1,7 +1,8 @@
 var data = JSON.parse(grocery);
 
-var cart = [];
 // Start of JQuery Code
+
+//CREATE PRODUCTS MAIN PAGE HTML
 $("document").ready(function(){
 	for (let i = 0; i < data.length; i++) {
 		$("#products").append(`<div><img src=${data[i].image}><p>${data[i].name}</p><h4>${data[i].price}€</h4>
@@ -10,6 +11,8 @@ $("document").ready(function(){
 
 	$("#products input").on("click", addToCart);
 	
+
+	// Increases quantity of items
 	function addToCart(){
 		var i = this.name;
 			data[i].quantity++;
@@ -17,14 +20,15 @@ $("document").ready(function(){
 	}
 
 	$("#showcart").click(function(){
-		$("#cart").toggle();
+		$("#cart").toggle(); //toggles between show/hide
 	})
 
 });
 
+//UPDATE THE CART'S HTML and SUM
 	var sum;
 	function update(){
-		var html ="";
+		var html =""; //clear content first before rewriting 
 		var rawsum = 0;
 		var discountPct;
 		for (let i = 0; i < data.length; i++) {
@@ -47,11 +51,13 @@ $("document").ready(function(){
 		$("#cart").html(html);
 	}
 
+//gets index parameter and wanted amount from input field
 	function changeAmount(i,amount) {
 		data[i].quantity = amount;
 		update();
 	}
 
+//clears the Cart
 	function clearCart() {
 		for (let i = 0; i < data.length; i++) {
 			data[i].quantity = 0;
