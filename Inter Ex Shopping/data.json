@@ -23,5 +23,23 @@ var grocery = `[
 	"image" : "img/cheese.jpeg",
 	"price" : "4.50",
 	"quantity" : "0"
+},{
+	"id" : "4",
+	"name" : "Ice Tee",
+	"image" : "img/icetea.jpeg",
+	"price" : "2.70",
+	"quantity" : "0"
+},{
+	"id" : "5",
+	"name" : "Basil",
+	"image" : "img/basil.jpeg",
+	"price" : "1.49",
+	"quantity" : "0"
+},{
+	"id" : "6",
+	"name" : "Banana",
+	"image" : "img/banana.jpeg",
+	"price" : "2.79",
+	"quantity" : "0"
 }
 ]`
