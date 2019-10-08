@@ -1,0 +1,27 @@
+var grocery = `[
+{
+	"id": "0",
+	"name" : "Milk",
+	"image" : "img/milk.jpeg",
+	"price" : "2.99",
+	"quantity" : "0"
+},{
+	"id" : "1",
+	"name" : "Lemon",
+	"image" : "img/lemon.jpeg",
+	"price" : "1.99",
+	"quantity" : "0"
+},{
+	"id" : "2",
+	"name" : "Orange Juice",
+	"image" : "img/orangejuice.jpeg",
+	"price" : "3.99",
+	"quantity" : "0"
+},{
+	"id" : "3",
+	"name" : "French Cheese",
+	"image" : "img/cheese.jpeg",
+	"price" : "4.50",
+	"quantity" : "0"
+}
+]`
