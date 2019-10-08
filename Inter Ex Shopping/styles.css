@@ -71,7 +71,10 @@ li>a:hover, li>div:hover {
   width: 300px;
   background: #ddd;
   color: #000;
+  top: 135px;
   border: 3px solid #000;
+  margin: 12px;
+  display: none;
 }
 
 #cart img {
@@ -89,6 +92,7 @@ li>a:hover, li>div:hover {
 #cart>div {
   border-bottom: 1px solid #000;
   clear: both;
+  overflow: hidden;
 }
 
 #cart input[type=number] {
@@ -99,4 +103,9 @@ li>a:hover, li>div:hover {
 #cart p, #cart h4 {
   font-size: 0.7em;
   margin: 2px;
+}
+
+.pct70 {
+  width: 60% !important;
+  text-align: left !important;
 }
