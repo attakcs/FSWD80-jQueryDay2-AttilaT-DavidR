@@ -9,34 +9,94 @@ header {
 nav ul {
   background-color: #1a63c3;
   font-size: 1.2em;
+  display: inline-block;
   color: white; 
   padding: 1pt;
-  overflow: hidden;
+  /* overflow: hidden; */
   list-style-type: none;
+  width: 100%;
    }
 
 li {
 	float: left;
 }
 
-li a {
-	display: block;
+li>a, li>div {
+	display: inline-block;
 	color: white;
 	text-align: center;
 	padding: 15px;
 	text-decoration: none;
 }
 
-li a:hover {
+li>a:hover, li>div:hover {
 	background-color: #0841a1; /* make same shade a little darker */
+  cursor: pointer;
 }
 
 #openCart {
 	float: right;
 }
 
-.container2 {
+.clearfloat {
+  clear: both;
+}
+
+/* PRODUCTS MAINPAGE */
+
+#products {
   display: flex;
   flex-wrap: wrap;
-  border:  1px solid black;
+}
+
+#products div {
+  text-align: center;
+  margin: 5%;
+}
+
+#products img {
+  width: 200px;
+  height: 200px;
+}
+
+#toggleCart {
+  float: right;
+  position: relative;
+}
+
+/* THE CART */
+#cart {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  background: #ddd;
+  color: #000;
+  border: 3px solid #000;
+}
+
+#cart img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+#cart>div>div {
+  float: left;
+  padding: 5px;
+  width: 30%;
+}
+
+#cart>div {
+  border-bottom: 1px solid #000;
+  clear: both;
+}
+
+#cart input[type=number] {
+  width: 32px;
+  margin-bottom: 25px;
+}
+
+#cart p, #cart h4 {
+  font-size: 0.7em;
+  margin: 2px;
 }
