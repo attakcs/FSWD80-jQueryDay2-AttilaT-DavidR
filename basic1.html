@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<img src="Cmbell.png" alt="christmas bell">
+	<img src="santa-claus.png" alt="Santa Claus">
+	<img src="whitebox.png" alt="White Box">
+
+	<script>
+		$("document").ready(function(){
+		$("img").css({"width":"200","height":"200"});
+		$("img").click(function(){
+			console.log("vag");
+			$("body").append($(this).attr("alt"));
+		})
+
+		});
+	</script>
+
+</body>
+</html>
