@@ -1,0 +1,42 @@
+body {
+  background-image: -webkit-linear-gradient(#BEF5E8, #1a63c3);
+  font-family: arial; }
+
+header {
+  text-align: center; 
+  }
+
+nav ul {
+  background-color: #1a63c3;
+  font-size: 1.2em;
+  color: white; 
+  padding: 1pt;
+  overflow: hidden;
+  list-style-type: none;
+   }
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #0841a1; /* make same shade a little darker */
+}
+
+#openCart {
+	float: right;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  border:  1px solid black;
+}
